@@ -11,7 +11,7 @@ const client = new Client(config);
 const app = express();
 
 // 環境変数でキーワードと類似度閾値を設定
-const KEYWORDS = (process.env.KEYWORDS || "こんにちは,ありがとう,こんばんは").split(",");
+const KEYWORDS = (process.env.KEYWORDS || "あそれあそれガイジが出た出たよよいのよいｗあガガイのガイあそれガガイのガイあよいしょガガイのガガイのガガイのガイｗあガイジガイジガイジガイジよいしょよいしょよいしょよいしょｗあっガヰ、あガヰ、あガヰガヰガヰあガガイのガイあそれガガイのガイあよいしょガガイのガガイのガガイのガイｗあガイジガイジガイジガイジよいしょよいしょよいしょよいしょｗあガガイのガイあそれガガイのガイあよいしょガガイのガガイのガガイのガイｗあガイジガイジガイジガイジよいしょよいしょよいしょよいしょｗ").split(",");
 const THRESHOLD = parseFloat(process.env.THRESHOLD || "0.7");
 
 // Webhookエンドポイント
